@@ -1,0 +1,20 @@
+architecture:
+  version: 0.2
+  
+  subtree:
+  - name: PE
+    attributes:
+      technology: 40nm
+
+    local:
+    - name: MainMemory
+      class: DRAM
+      attributes:
+        depth: 32768
+        block-size: 8
+        word-bits: 8
+
+    - name: MACC
+      class: intmac
+      attributes:
+        datawidth: 8
